@@ -1,0 +1,10 @@
+$red: #f41f22;
+$yellow: "";
+$green: "";
+$font-color: #222;
+
+.title {
+  @media screen and (max-width: 1300px) {
+    display: none !important;
+  }
+}

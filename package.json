@@ -1,0 +1,73 @@
+{
+  "name": "cala-backoffice",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "@sentry/react": "^5.27.1",
+    "dayjs": "^1.8.28",
+    "graphql": "^14.6.0",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-config": "^5.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "subscriptions-transport-ws": "^0.9.16"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.10.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^1.11.1"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint",
+      "pretty-quick — staged",
+      "git add"
+    ]
+  }
+}

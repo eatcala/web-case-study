@@ -1,0 +1,12 @@
+@import "reset.css";
+@import "variables.scss";
+
+#root {
+  min-height: 100%;
+}
+
+.main {
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  padding: 2em;
+}
